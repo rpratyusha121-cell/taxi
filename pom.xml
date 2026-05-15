@@ -210,6 +210,20 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+         
+         <distributionManagement>
+    <repository>
+        <id>maven-releases</id>
+        <name>Nexus Release Repository</name>
+        <url>http://13.126.0.215:8081/repository/maven-releases/</url>
+    </repository>
+
+    <snapshotRepository>
+        <id>maven-snapshots</id>
+        <name>Nexus Snapshot Repository</name>
+        <url>http://13.126.0.215:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
